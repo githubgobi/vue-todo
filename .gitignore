@@ -1,0 +1,6 @@
+.idea
+todo-spa/dist
+todo-vue/dist
+todo-vue-resource/dist
+todo-vue-router/dist
+todo-vuex/dist
