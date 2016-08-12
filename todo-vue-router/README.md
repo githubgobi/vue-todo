@@ -1,4 +1,4 @@
-# todo-vue
+# todo-vue-router
 
 > A Vue.js project
 

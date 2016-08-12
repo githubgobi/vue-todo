@@ -1,4 +1,4 @@
-# todo-vue
+# todo-spa
 
 > A Vue.js project
 
