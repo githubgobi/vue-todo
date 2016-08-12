@@ -35,7 +35,7 @@
             </div>
             <div class="panel-body">
               <ul class="list-group">
-                <li li class="list-group-item disabled"
+                <li class="list-group-item disabled"
                     v-if="todos.length === 0">
                   No todos...
                 </li>
@@ -102,15 +102,7 @@
       },
       remove(todo) {
         this.$http.delete(`todo/${todo.id}`)
-          .then(
-            () => {
-              var index = this.todos.indexOf(todo);
-
-              if (index > -1) {
-                this.todos.splice(index, 1);
-              }
-            }
-          );
+          .then(() => this.todos.$remove(todo));
       },
       fetchTodos() {
         this.$http.get('todo').then(({ data }) => this.todos = data)

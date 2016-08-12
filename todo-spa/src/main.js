@@ -18,7 +18,7 @@ Vue.http.options.root = 'http://todo-example.dev';
 // Setup vue-router
 Vue.use(VueRouter);
 const Router = new VueRouter({
-  hashbang: false,
+  hashbang: false
 });
 Router.map(routes);
 Router.redirect(redirects);

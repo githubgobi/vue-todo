@@ -18,7 +18,7 @@
               <br/>
               <br/>
               <ul class="list-group">
-                <li li class="list-group-item disabled"
+                <li class="list-group-item disabled"
                     v-if="$root.todos.length === 0">
                   No todos...
                 </li>
@@ -63,15 +63,11 @@
       }
     },
     methods: {
-      toggle(todo){
+      toggle(todo) {
         todo.done = !todo.done;
       },
       remove(todo) {
-        var index = this.$root.todos.indexOf(todo);
-
-        if (index > -1) {
-          this.$root.todos.splice(index, 1);
-        }
+        this.$root.todos.$remove(todo);
       }
     }
   }

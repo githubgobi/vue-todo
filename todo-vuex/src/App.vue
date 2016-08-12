@@ -35,7 +35,7 @@
             </div>
             <div class="panel-body">
               <ul class="list-group">
-                <li li class="list-group-item disabled"
+                <li class="list-group-item disabled"
                     v-if="todos.length === 0">
                   No todos...
                 </li>

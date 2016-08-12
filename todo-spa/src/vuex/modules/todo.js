@@ -19,17 +19,13 @@ const mutations = {
   },
 
   [TOGGLE_TODO] (state, todo) {
-    var index = state.all.indexOf(todo);
+    var foundTodo = state.all.find(t => t === todo);
 
-    state.all[index].done = !state.all[index].done;
+    foundTodo.done = !foundTodo.done;
   },
 
   [REMOVE_TODO] (state, todo) {
-    var index = state.all.indexOf(todo);
-
-    if (index > -1) {
-      state.all.splice(index, 1);
-    }
+    state.all.$remove(todo);
   }
 };
 

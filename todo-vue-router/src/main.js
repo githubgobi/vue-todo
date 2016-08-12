@@ -10,7 +10,7 @@ require('bootstrap/less/bootstrap.less');
 
 Vue.use(VueRouter);
 const Router = new VueRouter({
-  hashbang: false,
+  hashbang: false
 });
 Router.map(routes);
 Router.redirect(redirects);

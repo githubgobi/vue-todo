@@ -11,7 +11,7 @@ export const routes = {
   '/todo/create': {
     name: 'todo.create',
     component: require('./pages/todo/create.vue'),
-  },
+  }
 };
 
 /**
